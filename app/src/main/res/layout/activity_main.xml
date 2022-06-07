@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/counterTitle"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif"
+        android:text="COUNTER"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewtime"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="36dp"
+        android:text="Start"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="36dp"
+        android:text="STOP"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReset"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStart"
+        app:layout_constraintStart_toStartOf="@+id/buttonStart" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="112dp"
+        android:text="RESET"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStop"
+        app:layout_constraintStart_toStartOf="@+id/buttonStop" />
+
+    <TextView
+        android:id="@+id/textViewtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
